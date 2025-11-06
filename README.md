@@ -10,7 +10,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
 
   ***sudo dnf install nfs-utils \-y***
   
- ![image alt (https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20215738.png)]
+ ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20215738.png)]
 
   
 
