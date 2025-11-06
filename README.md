@@ -19,6 +19,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
   ***sudo systemctl enable  nfs-server***  
   ***sudo systemctl start nfs-server***  
   ***sudo systemctl status nfs-server***
+  
  ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20215917.png)
 
   
@@ -33,6 +34,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
   ***sudo chmod 777 /mnt/nfs\_share*** 
 
   ***Cd  /mnt/nfs\_share/ —\> make (mkdir)  sachin-bro33***
+  
   ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20220044.png)
 
 * Configure /etc/exports:
@@ -40,6 +42,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
   ***sudo vim  /etc/exports***  
   ***Add: /mnt/nfs\_share   192.168.161.133:(rw,sync,no\_root\_squash,no\_subtree\_check)***  
   ***sudo exportfs \-a***
+  
   ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20220151.png)
 
 # 
@@ -48,6 +51,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
 
 ***sudo firewall-cmd \--permanent \--add-service=nfs***  
 ***sudo firewall-cmd \--reload***
+
 ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20220228.png)
 
 # 
@@ -64,6 +68,7 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
 
 ***sudo mkdir \-p /mnt/nfs\_client***  
 ***sudo mount \-t nfs 192.168.161.128:/mnt/nfs\_share   /mnt/nfs\_client***
+
 ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20220358.png)
 
 # **📌 STEP 6:  *Test Access   //*  Verify Mount**
@@ -73,7 +78,8 @@ Set up an NFS Server to share a directory and mount it on one or more NFS Client
 ***ls  \-l***
 
 ***This is the same directory that we have created on the server pc, and now this is on the client pc***
+
 ![image alt](https://github.com/SACHIN-ST3/LINUX_NFS_PROJECT/blob/56db528592ac52d726ddc9f935cdc27d35ae3750/NFS_PROJECT/Screenshot%202025-11-06%20220427.png)
 
 
-***THIS IS A COMPLETED PROJECT***
+
